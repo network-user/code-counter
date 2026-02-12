@@ -1,3 +1,23 @@
+Metadata-Version: 2.4
+Name: code-counter-ntwusr
+Version: 0.1.0
+Summary: Библиотека для подсчета строк кода с учетом gitignore и git blame
+Author-email: Ntw Usr <example@example.example>
+License: MIT
+Project-URL: Repository, https://github.com/network-user/code-counter
+Keywords: code,lines,counter,git,statistics,loc,cloc
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
 # Code Counter
 
 🔢 Библиотека для подсчета строк кода в проекте с учетом `.gitignore` и анализом вклада разработчиков.
@@ -23,13 +43,13 @@ pip install code-counter-ntwusr
 
 ```bash
 # Анализ текущей директории
-code-counter
+code-counter-ntwusr
 
 # Анализ конкретного проекта
-code-counter /path/to/project
+code-counter-ntwusr /path/to/project
 
 # С показом топ-10 файлов
-code-counter --files
+code-counter-ntwusr --files
 ```
 
 

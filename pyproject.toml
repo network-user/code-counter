@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "code-counter"
+name = "code-counter-ntwusr"
 version = "0.1.0"
 description = "Библиотека для подсчета строк кода с учетом gitignore и git blame"
 readme = "README.md"

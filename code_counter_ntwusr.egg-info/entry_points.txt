@@ -1,0 +1,2 @@
+[console_scripts]
+code-counter = code_counter:main
