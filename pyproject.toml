@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-counter"
+version = "0.1.0"
+description = "Библиотека для подсчета строк кода с учетом gitignore и git blame"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Ntw Usr", email = "example@example.example"}
+]
+keywords = ["code", "lines", "counter", "git", "statistics", "loc", "cloc"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+
+[project.urls]
+Repository = "https://github.com/network-user/code-counter"
+
+[project.scripts]
+code-counter = "code_counter:main"
+
+[tool.setuptools]
+py-modules = ["code_counter"]
