@@ -1,8 +1,0 @@
-README.md
-code_counter.py
-pyproject.toml
-code_counter_ntwusr.egg-info/PKG-INFO
-code_counter_ntwusr.egg-info/SOURCES.txt
-code_counter_ntwusr.egg-info/dependency_links.txt
-code_counter_ntwusr.egg-info/entry_points.txt
-code_counter_ntwusr.egg-info/top_level.txt
