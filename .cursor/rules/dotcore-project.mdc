@@ -1,0 +1,31 @@
+---
+description: DotCore контекст проекта - сборка, тесты, соглашения. Читай AGENTS.md для деталей.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# DotCore Project Context
+
+Канонические инструкции: [AGENTS.md](../../AGENTS.md) в корне репозитория.
+
+## Кратко
+
+- **Тип:** library + cli (Python)
+- **Установка:** `pip install -e ".[dev]"`
+- **Dev / CLI:** `code-counter .`
+- **Тесты:** `pytest`
+
+## Правила
+
+- Источник правды - код, не устаревший README.
+- README в стандарте DotCore: без marketing, без `<details>`, без centered hero.
+- Обложка: `docs/cover.svg` + `<img>` (GitHub).
+- LoC-бейдж между `<!-- loc:start -->` и `<!-- loc:end -->`.
+- Минимальный scope изменений.
+
+## README
+
+Человеческая документация: [README.md](../../README.md). Не дублируй её целиком в чат - ссылайся на секции.
+
+Перегенерация: скилл `generate-readme` (обновляет README + AGENTS.md + этот rule).

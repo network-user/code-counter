@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "code-counter-ntwusr"
-version = "0.1.1"
+dynamic = ["version"]
 description = "Библиотека для подсчета строк кода с учетом gitignore и git blame"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -25,6 +25,9 @@ classifiers = [
     "Topic :: Software Development :: Version Control :: Git",
 ]
 
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.10"]
+
 [project.urls]
 Repository = "https://github.com/network-user/code-counter"
 
@@ -33,3 +36,17 @@ code-counter = "code_counter:main"
 
 [tool.setuptools]
 py-modules = ["code_counter"]
+
+[tool.setuptools.dynamic]
+version = {attr = "code_counter.__version__"}
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
