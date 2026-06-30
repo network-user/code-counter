@@ -1,12 +1,13 @@
 # .count
 
-![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
-![Category](https://img.shields.io/badge/Category-CLI%20%26%20Library-orange)
+<p>
+  <img src="https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat" alt="Python 3.12+" />
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-555?style=flat" alt="Platform" />
+  <img src="https://img.shields.io/badge/Category-CLI%20%26%20Library-orange?style=flat" alt="Category" />
+  <!-- loc:start --><img src="https://img.shields.io/badge/lines_of_code-796-lightgrey?style=flat" alt="796 lines of code" /><!-- loc:end -->
+</p>
 
 <img src="docs/cover.svg" width="720" alt="code-counter cover">
-
-<!-- loc:start --><img src="https://img.shields.io/badge/lines_of_code-796-lightgrey?style=flat" alt="796 lines of code" /><!-- loc:end -->
 
 Python-библиотека и CLI для подсчёта физических строк кода в каталоге. Учитывает `.gitignore`, группирует по расширениям, опционально считает вклад авторов через `git blame --incremental`. Runtime - только stdlib; внешние pip-зависимости не нужны.
 
@@ -60,12 +61,14 @@ Entry point: `[project.scripts]` → `code-counter = code_counter:main`.
 
 ## Стек
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest" />
-<img src="https://img.shields.io/badge/ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black" alt="ruff" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/setuptools-555555?style=for-the-badge" alt="setuptools" />
-<img src="https://img.shields.io/badge/mypy-2C5282?style=for-the-badge" alt="mypy" />
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest" />
+  <img src="https://img.shields.io/badge/ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black" alt="ruff" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/setuptools-555555?style=for-the-badge" alt="setuptools" />
+  <img src="https://img.shields.io/badge/mypy-2C5282?style=for-the-badge" alt="mypy" />
+</p>
 
 ## Тесты
 
@@ -81,7 +84,7 @@ pytest
 code-counter/
 ├── code_counter.py              # GitIgnoreParser, CodeCounter, CLI (v0.2.0)
 ├── pyproject.toml               # setuptools, entry point, ruff/pytest/mypy
-├── conftest.py
+├── conftest.py                  # делает плоский модуль импортируемым из тестов
 ├── AGENTS.md                    # инструкции для coding-агентов
 ├── CLAUDE.md                    # обёртка → AGENTS.md
 ├── .cursor/rules/
@@ -98,3 +101,7 @@ code-counter/
 - **Расширения**: 129 suffix + 9 имён файлов (Makefile, Dockerfile…); override через `--all-text` / `--ext`
 - **Author stats**: `git blame --incremental`, параллельно по файлам; без `.git` или git в PATH - пропуск без ошибки
 - **Публикация**: PyPI `code-counter-ntwusr`, runtime deps = stdlib
+
+## Лицензия
+
+MIT. Свободное использование, копирование, изменение и распространение с сохранением копирайта и текста лицензии. См. [LICENSE](LICENSE).
